@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+            .bgimg{
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url(p.jpg);
+                min-height: 90%;
+            }
+            .div1 h1{
+                color: white;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 5.5rem;
+                margin-left: 273px;
+                margin-bottom: 145px;
+
+            }
+            .about{
+                color: white;
+                background-color: #F44336;
+            }
+            .about h1{
+                text-align: center;
+            }
+            .chef{
+                border-radius: 50%;
+                float:right;
+                width: 150px;
+                margin-top: -79px;
+            }
+            .contact h1{
+                text-align: center;
+            }
+            #fname{
+                padding: 8px;
+                border: 1px solid #ccc!important;
+                display: block;
+                width: 100%;
+            }
+            #lname{
+                padding: 8px;
+                border: 1px solid #ccc!important;
+                display: block;
+                width: 100%;
+            }
+        </style>
+
+</head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="#">Logo</a>
+            
+            <!-- Links -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        <!------------------>
+        
+            <div class="bgimg container-fluid">
+                <div class="div1">
+                    <h1>THIN</h1>
+                    <h1>CRUST PIZZA</h1>
+                    <button type="button" class="btn btn-dark">LET ME SEE THE MENU</button>
+                    <button type="button" class="btn btn-dark">OPEN FROM 10AM to 12PM)</button>
+                </div>
+            </div>
+            <!---------------->
+                <div class="menu container-fluid">
+                    <h1>THE MENU</h1>
+
+                </div>
+                <div class="about container-fluid">
+                    <div class="container">
+                    <h1>About</h1>
+                    <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p><b>The Chef?</b> Mr. Italiano himself</p><br>
+                    <img class="chef" src="chef.jpg"/>
+                    <p>We are proud of our interiors</p>
+
+                    <img src="a.jpg"/>
+                    <h3>Opening Hours</h3>
+                    <div class="row">
+                        <div class="col" style="background-color:yellow;">Mon & Tue CLOSED:        Friday 10:00 - 12:00</div>
+                        <div class="col" style="background-color:orange;">Wednesday 10.00 - 24.00  Saturday 10:00 - 23:00</div>
+                        <div class="col" style="background-color:yellow;">Thursday 10:00 - 24:00   Sunday Closed</div>
+                        <div class="col" style="background-color:orange;">25%</div>
+                    </div>
+                    </div>
+                </div>
+                <br>
+                <div class="container-fluid">
+                    <img src="m.jpg"/>
+                </div>
+                <div class="contact container-fluid">
+                    <h1>CONTACT</h1>
+                    <p>Find us at some address at some place or call us at 05050515-122330</p>
+                    <br>
+                    <p>FYI! We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+                    <p><b>Reserve</b> a table, ask for today's special or just send us a message:</p>
+                    <br>
+                    <form action="action_page.php">
+                        
+                        <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+                        
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        </select>
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
+
+                        </form>
+    </div>
+        
+    </body>
+</html>
